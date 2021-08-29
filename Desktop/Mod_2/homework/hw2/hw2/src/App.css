@@ -1,0 +1,29 @@
+.App {
+  background-color: rgb(220, 246, 255);
+  border: solid navy 2px;
+  width: 30%; 
+  align-items: center;
+}
+
+#title{
+  color: navy;
+  text-align: center;
+  font-weight: bold;
+  font-size:xx-large;
+  font-family:'Courier New', Courier, monospace;
+}
+
+#form{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.storeList{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+}
+
