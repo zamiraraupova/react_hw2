@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import DivThree from './DivThree'
 
 export default class DivTwo extends Component {
     render() {
         return (
             <div>
-                <h3>{this.state.tardis} </h3>
+                <DivThree numThree= {this.props.numTwo}/>
+                <DivThree numThree= {this.props.numTwo}/>
             </div>
         )
     }

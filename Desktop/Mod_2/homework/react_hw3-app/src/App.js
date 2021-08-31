@@ -4,25 +4,25 @@ import DivOne from './DivOne'
 
 
 export default class App extends Component {
-  state={
+  state = {
     tardis: {
-      name: 'Time and Relative Dimension in Space',
+      name: "Time and Relative Dimension in Space",
       caps: false,
     }
   }
 
-  changeIt = (text) =>{
+  changeIt = (text) => {
     if (this.state.tardis.caps) {
       this.setState({
         tardis: {
-          name: text.toLowerCase(),
+          name: this.state.tardis.name.toLowerCase(),
           caps: false
         }
       })
     } else {
       this.setState({
         tardis: {
-          name: text.toUpperCase(),
+          name: this.state.tardis.name.toUpperCase(),
           caps: true
         }
       })
@@ -31,7 +31,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h3> DivOne tardis={this.state.tardis} </h3>
+        <h3 onClick={this.changeIt}> <DivOne numOne={this.state.tardis} /> </h3>
       </div>
     )
   }
